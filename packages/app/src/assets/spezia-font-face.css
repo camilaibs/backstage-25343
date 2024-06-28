@@ -1,0 +1,13 @@
+@font-face {
+	font-family: SpeziaCompleteVariableUpright;
+	font-stretch: 50% 200%;
+	font-weight: 1 1000;
+	src: url('./SpeziaCompleteVariableUprightWeb.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: SpeziaCompleteVariableItalic;
+	font-stretch: 50% 200%;
+	font-weight: 1 1000;
+	src: url('./SpeziaCompleteVariableItalicWeb.woff2') format('woff2');
+}
