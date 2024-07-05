@@ -36,7 +36,7 @@ import { AppRouter, FlatRoutes } from '@backstage/core-app-api';
 import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
-import "./assets/spezia-font-face.css";
+import './assets/spezia-font-face.css';
 
 const app = createApp({
   apis,
@@ -62,9 +62,19 @@ const app = createApp({
   },
 });
 
+const MyCustomPage = () => {
+  return (
+    <div>
+      <h1 style={{ fontFamily: 'SpeziaCompleteVariableUpright' }}>
+        Hello World
+      </h1>
+    </div>
+  );
+};
+
 const routes = (
   <FlatRoutes>
-    <Route path="/" element={<Navigate to="catalog" />} />
+    <Route path="/" element={<MyCustomPage />} />
     <Route path="/catalog" element={<CatalogIndexPage />} />
     <Route
       path="/catalog/:namespace/:kind/:name"
